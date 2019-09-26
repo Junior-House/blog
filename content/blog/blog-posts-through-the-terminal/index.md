@@ -1,7 +1,7 @@
 ---
 title: Blog Posts Through the Terminal
 author: Ryan Othniel Kearns
-date: 2019-09-26
+date: 2019-09-26T10:00:00
 ---
 This post should make it official. The latest blog build, with some simple bash scripting, allows us to write posts using a command-line interface and the Xcode editor. Hopefully I hash out some cooler and smarter features soon!
 

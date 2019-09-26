@@ -17,8 +17,20 @@ touch index.md
 echo "---" >> index.md
 echo "title: $title" >> index.md
 echo "author: $MYNAME" >> index.md
-DATE=$(date +%F)
+DATE=$(date +%FT%T)
 echo "date: $DATE" >> index.md
 echo "---" >> index.md
 
-open index.md
+vim index.md
+
+# commit the new post
+cd ../../../
+git add .
+git commit -m "$MYNAME wrote to $extension"
+
+printf Publish\ changes\?\ [Y/n]\ 
+read answer
+if [ $answer = Y ]
+then
+  git push
+fi
