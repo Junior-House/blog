@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Junior House`,
-    author: `Ryan Kearns`,
+    author: `Ryan Kearns; Alex Langshur; Harry Mellsop`,
     description: `A blog by three people in one house. We talk engineering, life, product, and philosophy.`,
-    siteUrl: `http://localhost:8000`,
+    siteUrl: `http://www.junior.house`,
   },
   plugins: [
     {

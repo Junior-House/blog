@@ -30,7 +30,7 @@ class BlogIndex extends React.Component {
                     {title}
                   </Link>
                 </h3>
-                <small>{node.frontmatter.date}</small>
+                <small>{node.frontmatter.author} • {node.frontmatter.date}</small>
               </header>
               <section>
                 <p
@@ -67,6 +67,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            author
           }
         }
       }
