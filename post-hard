@@ -2,10 +2,10 @@
 
 # get user input
 echo Let\'s Post Hard!
-printf URL\ Extension:\ 
-read extension
 printf Title:\ 
 read title
+# file extension is lower skewer case, no special characters, max 40 characters
+extension=$(echo $title | tr -dc '[:alnum:]\n\r ' | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | cut -c -40)
 
 # make dir
 cd content/blog
@@ -20,3 +20,5 @@ echo "author: $MYNAME" >> index.md
 DATE=$(date +%F)
 echo "date: $DATE" >> index.md
 echo "---" >> index.md
+
+open index.md
