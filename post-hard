@@ -30,6 +30,6 @@ then
   # commit the new post
   cd ../../../
   git add .
-  git commit -m "$MYNAME wrote '$title'"
+  git commit -m "POST: $MYNAME wrote '$title'"
   git push
 fi
