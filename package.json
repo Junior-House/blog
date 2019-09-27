@@ -1,12 +1,9 @@
 {
-  "name": "gatsby-starter-blog",
-  "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "name": "junior-house-blog",
+  "private": false,
+  "description": "A blog by three people in one house. We talk engineering, life, product, and philosophy.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
+  "author": "Ryan Kearns <ryankearns25@gmail.com>",
   "dependencies": {
     "gatsby": "^2.15.25",
     "gatsby-image": "^2.2.21",

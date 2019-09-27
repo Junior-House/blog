@@ -28,12 +28,18 @@ This repository builds directly into the blog located at `http://www.junior.hous
     git clone https://github.com/Junior-House/blog.git
     ```
 
+1.  **Gotta install those Packarinos**
+
+    ```shell
+    cd blog
+    npm install
+    ```
+
 1.  **Start Developing**
 
     To run a development build of the blog:
 
     ```shell
-    cd blog/
     gatsby develop
     ```
 
