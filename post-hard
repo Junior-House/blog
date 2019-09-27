@@ -23,14 +23,13 @@ echo "---" >> index.md
 
 vim index.md
 
-# commit the new post
-cd ../../../
-git add .
-git commit -m "$MYNAME wrote to $extension"
-
 printf Publish\ changes\?\ [Y/n]\ 
 read answer
 if [ $answer = Y ]
 then
+  # commit the new post
+  cd ../../../
+  git add .
+  git commit -m "$MYNAME wrote \'$title\''"
   git push
 fi
