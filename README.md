@@ -1,46 +1,63 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+  <a href="junior.house">
+    <img alt="Das House Ooh Yah" src="./content/assets/bandit.png" width="60" />
   </a>
 </p>
 <h1 align="center">
-  Gatsby's blog starter
+  The Junior House Blog
 </h1>
 
-Kick off your project with this blog boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+This repository builds directly into the blog located at `http://www.junior.house` and written by Ryan Othniel Kearns, Alex Langshur, and Harry Mellsop. For instructions on how to configure your local environment for posting, read what's immediately below! For a writeup on how this blog was built, check back on this document soon!
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+## Local Environment Configuration
 
-## 🚀 Quick start
+1. **Navigate to your Desired Directory Endpoint**
 
-1.  **Create a Gatsby site.**
-
-    Use the Gatsby CLI to create a new site, specifying the blog starter.
+    For me, this is `~/Desktop/code`, so I would replace `${dirname}` in the below example with `~/Desktop/code`.
 
     ```shell
-    # create a new Gatsby site using the blog starter
-    gatsby new my-blog-starter https://github.com/gatsbyjs/gatsby-starter-blog
+    cd ${dirname}
     ```
 
-1.  **Start developing.**
+    Later on we'll set up an alias that references this endpoint. New blog posts don't require any manipulation of the source code or the directory at all, so just put it somewhere it won't be fussed with.
 
-    Navigate into your new site’s directory and start it up.
+1.  **Clone this Repository**
 
     ```shell
-    cd my-blog-starter/
+    git clone https://github.com/Junior-House/blog.git
+    ```
+
+1.  **Start Developing**
+
+    To run a development build of the blog:
+
+    ```shell
+    cd blog/
     gatsby develop
     ```
 
-1.  **Open the source code and start editing!**
-
-    Your site is now running at `http://localhost:8000`!
+    The site runs at `http://localhost:8000`.
 
     _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
-    Open the `my-blog-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+1.  **Set up environmental variables**
 
-## 🧐 What's inside?
+    Copy the following into your `~/.bash_profile`, where `${yourname}` is replaced with the name your blog posts will be authored with. Mine is `Ryan Othniel Kearns`.
+
+    ```shell
+    export MYNAME="${yourname}"
+    ```
+
+    Also copy the following into your `~/.bash_profile`, where `${dirname}` is replaced with your choice in the first instruction:
+
+    ```shell
+    alias posthard="${dirname}/blog/post-hard"
+    ```
+
+    Setting this alias will allow you to `posthard` from anywhere on your computer! If you've set it up right, running the alias (after terminal restart) should prompt you for a blog post title, then open vim to write the post.
+
+## Additional notes about the Gatsby boilerplate build
 
 A quick look at the top-level files and directories you'll see in a Gatsby project.
 
@@ -81,17 +98,3 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
 12. **`README.md`**: A text file containing useful reference information about your project.
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-blog)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
