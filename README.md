@@ -63,6 +63,16 @@ This repository builds directly into the blog located at `http://www.junior.hous
 
     Setting this alias will allow you to `posthard` from anywhere on your computer! If you've set it up right, running the alias (after terminal restart) should prompt you for a blog post title, then open vim to write the post.
 
+## Time to Post Hard!
+
+  Now that your terminal is reset to recognize your alias, try posting! Running `posthard` from anywhere should prompt you for the title of your new post, then open up a vim window with the markdown file that will go live on the site. When you're done editing, the terminal will ask you:
+
+  ```shell
+  Publish changes? [Y/n]
+  ```
+
+  Typing `Y` and pressing enter will push the new post onto the Github with an automated commit memo, which will in turn trigger the site to rebuild at the production url. You can always press `n` if you would like to see your changes in development first, but in this case your commit will have to be manually initialized. For cleanliness, we should stick to prefixing new post commit memos with `POST:` and source code changes with `DEV:`.
+
 ## Additional notes about the Gatsby boilerplate build
 
 A quick look at the top-level files and directories you'll see in a Gatsby project.
