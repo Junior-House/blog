@@ -58,7 +58,7 @@ This repository builds directly into the blog located at `http://www.junior.hous
     Also copy the following into your `~/.bash_profile`, where `${dirname}` is replaced with your choice in the first instruction:
 
     ```shell
-    alias posthard="${dirname}/blog/post-hard"
+    alias posthard="cd ${dirname}/blog && ./post-hard"
     ```
 
     Setting this alias will allow you to `posthard` from anywhere on your computer! If you've set it up right, running the alias (after terminal restart) should prompt you for a blog post title, then open vim to write the post.
