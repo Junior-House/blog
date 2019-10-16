@@ -1,5 +1,5 @@
 ---
-title: Dissecting the Encyclopedia of Life [Part 1]
+title: Dissecting EOL [Part 1]
 author: Alex Langshur
 date: 2019-10-14T20:36:00
 ---
